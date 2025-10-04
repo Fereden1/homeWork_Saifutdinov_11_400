@@ -1,22 +1,19 @@
-<html lang="en">
 <#include "base.ftl">
 
 <#macro title>Users</#macro>
 
 <#macro content>
+    <h2>Users table</h2>
 
     <#if users?has_content>
         Таблица рекордов:
         <br>
-        Имя Очки
+        Логин Имя
         <br>
         <#list users as u>
-            ${u.name} ${u.login}
+            ${u.login} ${u.name}
             <br>
         </#list>
     </#if>
 
 </#macro>
-
-
-</html>
